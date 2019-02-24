@@ -1,1 +1,62 @@
-/* Acá va tu código */
+* {
+    max-width: 1300px;
+    margin:auto;
+  }
+  
+  
+  body {
+    background-color: yellow;
+    background-size: 100vh;
+  }
+  
+  .colorgraph {
+    height: 0.5em;
+    align-content: center;
+    border-top: 0;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  }
+  
+  img {
+    width: 25%;
+    align-content: center;
+  }
+
+  button{
+	  padding: 0.5px 35px;
+	  background-color: #99c5c2;
+	  border: 0.2px solid #486e84;
+	  font-size: 15px;
+	  color: brown;
+  }
+
+  button:hover{
+    background-color:#486b84;
+    color: white;
+  }
+
+  .box-border{
+	  border: 5px outset greenyellow;
+	  padding: 40px 10px;
+    width: 40%;
+    margin-top: 100px;
+  	margin-left: auto;
+	  margin-bottom: auto;
+	  margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    }
+
+div{
+    color: green;
+    font-size: 15px;
+    text-align: center;
+    list-style-type: lower-latin;
+  }
+
+input{
+	margin-left: 10px;
+	width: 250px;
+	background-color: transparent;
+	border: 0.5px solid greenyellow;
+  }
