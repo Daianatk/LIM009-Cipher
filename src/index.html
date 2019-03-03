@@ -1,52 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Caesar Cipher</title>
-    <!-- Hoja de estilo CSS enlazada -->
-    <link rel="stylesheet" href="style.css">
+
+<head>
     <meta charset="utf-8">
-  </head>
-  <body>
-    <!-- Formulario de registro -->
-   <div id="conteiner" class="box-border">
-    <div class="row">
-      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
-        <form role="form">
-          <div class="logo-container">
-            <img class="img-responsive center-block" src="..\img\ping-logo.jpg" alt="logo">
-          </div>
-          <hr class="colorgraph">
-          <div class="form-group">
-            <input type="telefono" name="telefono" id="telefono" class="form-control input-lg" placeholder="Telefono" tabindex="3">
-          </div>
-          <div class="form-group">
-            <input type="text" id="n_offset_e" name="n_offset_e" maxlength="2" class="form-control" placeholder="Valor a Desplazar" tabindex="4">
-          </div>
-          <div class="form-group">
-            <input type="text" name="box-msg-encode" id="box-msg-encode" class="form-control input-lg" placeholder="Ingresar Contraseña Segura" tabindex="5">
-          </div>
-          <div class="form-group">
-            <input type="text" name="msg-encode-check" id="msg-encode-check" disabled="disabled" class="form-control input-lg" placeholder="Contraseña Codificada" tabindex="6">
-          </div>
-          <div class="form-group">
-            <input type="text" name="txtDecode" id="msg-decode-check" disabled="disabled" class="form-control input-lg" placeholder="Contraseña Decodificada" tabindex="7">
-          </div>
-          <hr class="colorgraph">
-          <div class="button">
-            <div class="col-md-offset-3 col-md-6 col-md-offset-3">
-              <button type="button" name="btn_encode">Encode</button>
-                <button type="button" name="btn_decode">Decode</button>
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Pacifico" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!--CONTENEDOR DEL CIFRADO-->
+    <section id="contentCipher" class="content">
+        <!--CABECERA-->
+        <header class="contentHeader">
+            <h1><img class="img" src="..\img\ping-logo.jpg" alt="logo"></h1>
+        </header>
+
+        <hr class="colorgraph">
+
+        <!--ENLACES ENCODE Y DECODE-->
+
+        <div id="encodeDecode" class="linkCode">
+            <a href="#" id="linkEncode" class="linkActive">Codificar</a>
+            <a href="#" id="linkDecode">Decodificar</a>
+        </div>
+
+        <!--CAJA ENCODE-->
+
+        <div id="contentEncode" class="displayBlock">
+            <p>Ingrese Contraseña Segura</p>
+            <input id="txtEncode" class="txtStyle" placeholder="Ingrese su palabra...">
+            <div class="contentOffset">
+                <label class="label">Ingrese desplazamiento</label>
+                <input type="text" id="nOffsetE" class="nOffsetStyle">
             </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-    <!-- Archivo JS enlazado-->
+            <button id="btnEncode" class="btnCode">Codifica</button>
+            <div id="encode" class="encode">
+                <p id="tEncode"></p>
+            </div>
+            <button onclick="location.reload();" class="btnReload">Guardar</button>
+        </div>
+
+        <!--CAJA DECODE-->
+
+        <div id="contentDecode" class="displayNone">
+            <p>Ingrese Contraseña Segura</p>
+            <input id="txtDecode" class="txtStyle" placeholder="Ingrese su palabra...">
+            <div class="contentOffset">
+                <label class="label">Ingrese desplazamiento</label>
+                <input type="text" id="nOffsetD" class="nOffsetStyle">
+            </div>
+            <button id="btnDecode" class="btnCode">Decodifica</button>
+            <div id="decode" class="decode">
+                <p id="tDecode"></p>
+            </div>
+            <button onclick="location.reload();" class="btnReload">Borrar</button>
+        </div>
+    </section>
+
+    <!--¡¡¡¡¡¡ESTE ARCHIVO NO SE TOCA!!!!!-->
+    <div id="root"></div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
-  </body>
+</body>
+
 </html>
