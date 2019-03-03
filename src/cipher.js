@@ -1,52 +1,50 @@
-const desplazamiento = document.getElementById("desplazamiento");
-const texto = document.getElementById("texto");
-const textoCifrado = document.getElementById("cifrado");
-const textoDecifrado = document.getElementById("decodificado");
+window.cipher = {
+    encode: (string, offset) => {
+        //mensaje recibido
+        let msgCipher = "";
+        for (let i = 0; i < string.length; i++) {
+            let character = string[i];
+            if (character.match(/[a-z]/i)) {
+                if (string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90) {
+                    let textChar = (string.charCodeAt(i) - 65 + parseInt(offset)) % 26 + 65;
+                    msgCipher += String.fromCharCode(textChar);
+                } else if (string.charCodeAt(i) >= 97 && string.charCodeAt(i) <= 122) {
+                    textChar = (string.charCodeAt(i) - 97 + parseInt(offset)) % 26 + 97;
+                    msgCipher += String.fromCharCode(textChar);
+                }
+            } else {
+                msgCipher += character;
+            }
+        }
+        return msgCipher;
+    },
+    decode: (string, offset) => {
+        //mensaje recibido
+        let msgDecipher = "";
 
-//Encode
-function decode (string, offset) {
-  /* Acá va tu código */
+        //inicio recorrido de caracteres
+        for (let i = 0; i < string.length; i++) {
+            let characterD = string[i];
+            //identificacion de espacios vacios
+            if (characterD.match(/[a-z]/i)) {
+                console.log(string.charCodeAt(i));
 
-  const textoIngresado = texto.value;
-  textoCifrado.value = textoIngresado.split('').map(x=>{
-    let mayus = (x === x.toUpperCase()) ? true : false;
-    let valorEntero = x.toLowerCase().charCodeAt(0);
-    if(valorEntero >= 97 && valorEntero <= 122)
-      {
-        const offset = parseInt(desplazamiento.value);
-        if(valorEntero + offset > 122)
-          valorEntero = 97 + (valorEntero - 122) + offset - 1;
-        else
-          valorEntero = valorEntero + offset;
-      }
-      let cifrado = String.fromCharCode(valorEntero);
-      return mayus ? cifrado.toUpperCase() : cifrado;
-    }).join('');
-}  
+                if (string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90) {
+                    let textChar = (string.charCodeAt(i) + 65 - parseInt(offset)) % 26 + 65;
+                    msgDecipher += String.fromCharCode(textChar);
+                    console.log("entra");
+                } else if (string.charCodeAt(i) >= 97 && string.charCodeAt(i) <= 122) {
+                    let textChar = ((string.charCodeAt(i) - 97 - parseInt(offset) + 52) % 26) + 97;
+                    msgDecipher += String.fromCharCode(textChar);
+                }
 
-texto.addEventListener("keyup",decode);
-desplazamiento.addEventListener("change", decode); 
 
-//Decode
-    
-function encode (string, offset) {
-  /* Acá va tu código */
-  
-  const textoIngresado = texto.value;
-  textoDecifrado.value = textoIngresado.split('').map(y=>{ //Separar palabras
-    let mayus = (y === y.toUpperCase()) ? true : false;//Devuelve el valor en Mayuscula
-    let valorEntero = y.toLowerCase().charCodeAt(0); //Devuelve el valor en Minuscula
-    if(valorEntero <= 96 && valorEntero <= 123)
-      {
-        const offset = parseInt(desplazamiento.value);
-        if(valorEntero + offset < 123)
-          valorEntero = 96 + (valorEntero - 123) + offset - 1;
-        else
-          valorEntero = valorEntero + offset;
-      }
-      let decodificado = String.fromCharCode(valorEntero);
-      return mayus ? decodificado.toUpperCase() : decodificado;
-    }).join('');
+
+            } else {
+                msgDecipher += characterD;
+            }
+        }
+        //retornar respuesta
+        return msgDecipher;
+    }
 }
-texto.addEventListener("keyup",encode);
-desplazamiento.addEventListener("change", encode); 
