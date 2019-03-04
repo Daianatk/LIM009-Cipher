@@ -1,8 +1,8 @@
-# Cambio de Contraseña para Usuarios Nuevos
+# Proyecto Caesar Cipher
 
-En la pantalla [Inicio](http://es.tinypic.com/view.php?pic=28rnqbl&s=9#.XHsruMBKjIU) se aprecia como se distribuyo los principales componentes para la presentaciòn del proyecto.
+En la pantalla  se aprecia como se distribuyo los principales componentes para la presentaciòn del proyecto.
 
-![](http://es.tinypic.com/view.php?pic=28rnqbl&s=9#.XHsruMBKjIU)
+
 
 ## A que usuarios va enfocado
 
