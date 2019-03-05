@@ -1,13 +1,6 @@
 # Proyecto Caesar Cipher 📄
-<<<<<<< HEAD
 
 ![image](https://github.com/Daianatk/LIM009-Cipher/blob/master/img/pantalla.jpg)
-
-En la pantalla  se aprecia como se distribuyo los principales componentes para la presentaciòn del proyecto.
-=======
-
-![image](https://github.com/Daianatk/LIM009-Cipher/blob/master/img/pantalla.jpg)
->>>>>>> c26b56d1751d61ba34588aba3cca67e966ec227b
 
 En la pantalla  se aprecia como se distribuyo los principales componentes para la presentaciòn del proyecto.
 
