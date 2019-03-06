@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -15,10 +15,15 @@
     <section id="contentCipher" class="content">
         <!--CABECERA-->
         <header class="contentHeader">
-            <h1><img class="img" src="..\img\ping-logo.jpg" alt="logo"></h1>
+            <div>
+                <h1><img class="img" src="..\img\ping-logo.jpg" alt="logo"></h1>
+                <p class="content1">Ingresa aqui la palabra o frase que elegiras como contraseña segura</p>
+            </div>
         </header>
 
-        <hr class="colorgraph">
+            <div>
+                <hr class="colorgraph">
+            </div>
 
         <!--ENLACES ENCODE Y DECODE-->
 
@@ -30,11 +35,11 @@
         <!--CAJA ENCODE-->
 
         <div id="contentEncode" class="displayBlock">
-            <p>Ingrese Contraseña Segura</p>
+            <label class="label">Ingrese Contraseña Segura</label>
             <input id="txtEncode" class="txtStyle" placeholder="Ingrese su palabra...">
             <div class="contentOffset">
                 <label class="label">Ingrese desplazamiento</label>
-                <input type="text" id="nOffsetE" class="nOffsetStyle">
+                <input type="text" id="nOffsetE" maxlength="2" class="nOffsetStyle" placeholder="N°">
             </div>
             <button id="btnEncode" class="btnCode">Codifica</button>
             <div id="encode" class="encode">
@@ -46,7 +51,7 @@
         <!--CAJA DECODE-->
 
         <div id="contentDecode" class="displayNone">
-            <p>Ingrese Contraseña Segura</p>
+            <label class="label">Ingrese Contraseña Segura</label>
             <input id="txtDecode" class="txtStyle" placeholder="Ingrese su palabra...">
             <div class="contentOffset">
                 <label class="label">Ingrese desplazamiento</label>
@@ -60,7 +65,7 @@
         </div>
     </section>
 
-    <!--¡¡¡¡¡¡ESTE ARCHIVO NO SE TOCA!!!!!-->
+    <!--¡¡¡¡¡¡Archivos de enlace JS!!!!!-->
     <div id="root"></div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>

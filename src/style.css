@@ -16,15 +16,15 @@ body {
 }
 
 img {
-    width: 25%;
+    width: 30%;
 }
 
 .contentHeader h1 {
     font-family: 'Pacifico', cursive;
-    font-size: 55px;
+    font-size: 10px;
     text-align: center;
     color: #008F99;
-    font-weight: 500;
+    font-weight: 100%;
 }
 
 .contentHeader p {
@@ -34,19 +34,23 @@ img {
 }
 
 .content {
-    width: 50%;
+    width: 40%;
     border-radius: 10px;
     padding: 20px;
     border: 1px solid #008F99;
     margin: 0 auto;
-    margin-top: 15px;
+    margin-top: 60px;
     margin-bottom: 15px;
     background-color: #ffffff;
     box-shadow: 3px 3px 7px 1px #333;
 }
 
+.content1{
+    margin: 2%;
+}
+
 .nOffsetStyle {
-    width: 40px;
+    width: 50px;
     height: 30px;
 }
 
@@ -55,7 +59,7 @@ img {
 }
 
 .label {
-    font-size: 16px;
+    font-size: 14px;
     font-family: arial;
     color: #666;
 }
@@ -66,55 +70,52 @@ img {
 
 .linkCode {
     width: 100%;
-    font-size: 22px;
+    font-size: 16px;
     font-family: arial;
-    margin: 0 auto;
-    padding: 5px;
+    margin: 1%;
+    padding: 2%;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 2%;
 }
 
 .linkCode a {
     text-decoration: none;
     text-align: center;
     color: #666666;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .linkCode a:hover {
-    border-bottom: 2px solid #008F99;
+    border-bottom: 2% solid #008F99;
     color: #008F99;
-    padding-bottom: 5px;
+    padding-bottom: none;
     transition: 0.3s;
 }
 
 .linkActive {
-    border-bottom: 2px solid #008F99;
-    color: #008F99 !important;
-    padding-bottom: 5px;
+    border-bottom: 1px solid #008F99;
+    color: #008F99;
+    padding-bottom: 1px;
 }
 
 .txtStyle {
-    margin-top: 20px;
-}
-
-.txtStyle p {
-    font-family: arial;
-    color: #333333;
-    margin-bottom: 10px;
-}
-
-.txtStyle {
-    width : 300px;
+    margin-top: 1px;
+    width : 100%;
     height: 30px;
     resize: none;
     outline: 0px;
 }
 
+.txtStyle p {
+    font-family: arial;
+    color: #333333;
+    margin-bottom: 100%;
+}
+
 .btnCode {
     border: 0px;
-    width: 170px;
+    width: 100px;
     height: 30px;
     background-color: #008F99;
     border-radius: 5px;
@@ -136,7 +137,7 @@ img {
 
 .btnReload {
     border: 0px;
-    width: 170px;
+    width: 100px;
     height: 30px;
     background-color: #008F99;
     border-radius: 5px;
