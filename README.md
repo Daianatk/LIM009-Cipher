@@ -3,6 +3,7 @@
 ![image](https://github.com/Daianatk/LIM009-Cipher/blob/master/img/pantalla.jpg)
 
 En la pantalla  se aprecia como se distribuyo los principales componentes para la presentaciòn del proyecto.
+Se ingresa un texto y el desplazamiento en numero. Luego el usuario tiene la opcion de codificar la cual le muestra el texto o palabra ingresado, a su vez puede copiar esta palabra e ir al area de decodificar para pegar la palabra y asegurarse que es la ingresada.
 
 ## A que usuarios va enfocado 📄
 
