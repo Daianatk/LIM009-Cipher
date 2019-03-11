@@ -23,7 +23,7 @@ img {
     width: 30%;
 }
 
-.contentHeader h1 {
+.content_header h1 {
     font-family: 'Pacifico', cursive;
     font-size: 10px;
     text-align: center;
@@ -31,7 +31,7 @@ img {
     font-weight: 100%;
 }
 
-.contentHeader p {
+.content_header p {
     text-align: center;
     font-family: arial;
     color: #666;
@@ -72,7 +72,7 @@ img {
     font-size: 14px;
 }
 
-.linkCode {
+.link_code {
     width: 100%;
     font-size: 16px;
     font-family: arial;
@@ -82,7 +82,7 @@ img {
     margin-top: 2%;
 }
 
-.linkCode a {
+.link_code a {
     text-decoration: none;
     text-align: center;
     color: #666666;
@@ -90,7 +90,7 @@ img {
     margin-right: 10%;
 }
 
-.linkCode a:hover {
+.link_code a:hover {
     border-bottom: 2% solid #008F99;
     color: #008F99;
     padding-bottom: none;
